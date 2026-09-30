@@ -1,6 +1,9 @@
 import './App.css'
 
 function App() {
+
+  const BASE_URL = import.meta.env.BASE_URL
+
   return (
     <div>
 
@@ -69,7 +72,7 @@ function App() {
               <div className="buttons">
 
                 <a
-                  href="/resume.pdf"
+                  href={`${BASE_URL}resume.pdf`}
                   target="_blank"
                   rel="noreferrer"
                   className="primary-btn"
@@ -106,13 +109,14 @@ function App() {
                 >
                   🔗 LinkedIn Profile
                 </a>
+
                 <a
-  href="https://github.com/abhiabhi1833-ux"
-  target="_blank"
-  rel="noreferrer"
->
-  💻 GitHub Profile
-</a>
+                  href="https://github.com/abhiabhi1833-ux"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  💻 GitHub Profile
+                </a>
 
                 <span>
                   &lt;/&gt; Building a smarter future
@@ -128,7 +132,7 @@ function App() {
             <div className="hero-right">
 
               <img
-                src="/images/profile.jpg"
+                src={`${BASE_URL}images/profile.jpg`}
                 alt="Abhishek Babu"
                 className="profile-photo"
               />
@@ -565,7 +569,7 @@ function App() {
           </p>
 
           <a
-            href="/research/research-paper.pdf"
+            href={`${BASE_URL}research/research-paper.pdf`}
             target="_blank"
             rel="noreferrer"
             className="primary-btn"
@@ -597,6 +601,8 @@ function App() {
         </p>
 
 
+        {/* RESUME */}
+
         <div className="document-card resume-card">
 
           <h3>
@@ -610,7 +616,7 @@ function App() {
           </p>
 
           <a
-            href="/resume.pdf"
+            href={`${BASE_URL}resume.pdf`}
             target="_blank"
             rel="noreferrer"
             className="primary-btn"
@@ -620,6 +626,8 @@ function App() {
 
         </div>
 
+
+        {/* NIT CERTIFICATE */}
 
         <div className="document-card">
 
@@ -634,13 +642,13 @@ function App() {
           </p>
 
           <img
-            src="/images/nit-internship-certificate.jpeg"
+            src={`${BASE_URL}images/nit-internship-certificate.jpeg`}
             alt="NIT Andhra Pradesh Internship Certificate"
             className="certificate-image"
           />
 
           <a
-            href="/images/nit-internship-certificate.jpeg"
+            href={`${BASE_URL}images/nit-internship-certificate.jpeg`}
             target="_blank"
             rel="noreferrer"
             className="primary-btn"
@@ -656,13 +664,15 @@ function App() {
         </h3>
 
 
+        {/* ID CARDS */}
+
         <div className="id-cards-container">
 
 
           <div className="id-card">
 
             <img
-              src="/images/teacher-id.jpg"
+              src={`${BASE_URL}images/teacher-id.jpg`}
               alt="Teacher ID Card"
             />
 
@@ -680,7 +690,7 @@ function App() {
           <div className="id-card">
 
             <img
-              src="/images/btech-id.jpeg"
+              src={`${BASE_URL}images/btech-id.jpeg`}
               alt="B.Tech ID Card"
             />
 
@@ -698,7 +708,7 @@ function App() {
           <div className="id-card">
 
             <img
-              src="/images/mtech-id.jpeg"
+              src={`${BASE_URL}images/mtech-id.jpeg`}
               alt="M.Tech ID Card"
             />
 
@@ -716,7 +726,7 @@ function App() {
           <div className="id-card">
 
             <img
-              src="/images/inter-id.jpeg"
+              src={`${BASE_URL}images/inter-id.jpeg`}
               alt="Intermediate ID Card"
             />
 
